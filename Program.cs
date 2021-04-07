@@ -34,12 +34,6 @@ namespace ListaAbril
                 Estudiantes estudiante = new Estudiantes(nombre, edad, carnet, solvente);
                 
 
-                ListaEstudiantes[cont] = estudiante;
-                cont++;
-
-                
-                
-
                 while (cont2<2)
                 {
                     Console.WriteLine("Ingrese curso");
@@ -57,9 +51,16 @@ namespace ListaAbril
                     Cursos cursos1 = new Cursos(nombrecurso, nota1, nota2, final);
                     ListaCursos[cont2] = cursos1;
                     cont2++;
+                    
                 }
 
+                ListaEstudiantes[cont] = estudiante;
+                cont++;
+
             }
+
+            
+            
             
             Console.WriteLine("LISTA");
 
@@ -67,14 +68,16 @@ namespace ListaAbril
             {
                 Estudiantes estudiante = ListaEstudiantes[i];
                 Console.WriteLine(" nombre de estudiante " + estudiante.nombre + " Carnet " + estudiante.carnet);
-                
-            }
 
-            for(int j=0; j<2; j++)
+                for(int j=0; j<2; j++)
                 {
                     Cursos cursos1 = ListaCursos[j];
                     Console.WriteLine("Nombre del curso" + cursos1.nombrecurso);
                 }
+                
+            }
+
+            
 
             Console.ReadKey();
             
