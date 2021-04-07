@@ -18,31 +18,31 @@ namespace ListaAbril
 
             while(cont<2)
             {
-                Console.WriteLine("Ingrese nombre");
+                Console.WriteLine("INGRESE NOMBRE DE ESTUDIANTE");
                 String nombre = Console.ReadLine();
 
-                Console.WriteLine("Ingrese edad");
+                Console.WriteLine("INGRESE EDAD DE ESTUDIANTE");
                 int edad = Convert.ToInt16(Console.ReadLine());
 
-                Console.WriteLine("Ingrese el carnet");
+                Console.WriteLine("INGRESE CARNET DE ESTUDIANTE");
                 String carnet =Console.ReadLine();
 
-                Console.WriteLine("Indique si está solvente");
+                Console.WriteLine("INDIQUE SI ESTÁ SOLVENTE");
                 Boolean solvente = Boolean.Parse(Console.ReadLine());
 
                 Estudiantes estudiante = new Estudiantes(nombre, edad, carnet, solvente);
 
                 for(int x=0; x<2; x++){
-                    Console.WriteLine("Ingrese curso");
+                    Console.WriteLine("INGRESE NOMBRE DE CURSO");
                     String nombrecurso = Console.ReadLine();
 
-                    Console.WriteLine("Ingrese nota del parcial 1");
+                    Console.WriteLine("INGRESE NOTA DE PARCIAL 1");
                     int nota1 = Convert.ToInt16(Console.ReadLine());
 
-                    Console.WriteLine("Ingrese nota del parcial 2");
+                    Console.WriteLine("INGRESE NOTA DE PARCIAL 2");
                     int nota2 = Convert.ToInt16(Console.ReadLine());
 
-                    Console.WriteLine("Ingrese nota del examen final");
+                    Console.WriteLine("INGRESE NOTA DE EXAMEN FINAL");
                     int final = Convert.ToInt16(Console.ReadLine());
 
                     Cursos cursos1 = new Cursos(nombrecurso, nota1, nota2, final);
@@ -57,7 +57,7 @@ namespace ListaAbril
 
             }
             Console.WriteLine("");
-            Console.WriteLine("LISTA");
+            Console.WriteLine("__0____oOo____0__--- LISTA ---__0____oOo____0__");
 
             for(int i=0; i<2; i++)
             {
