@@ -14,10 +14,9 @@ namespace ListaAbril
             
             
             int cont =0;
-            int cont2=0;
             
 
-            while (cont<2)
+            while(cont<2)
             {
                 Console.WriteLine("Ingrese nombre");
                 String nombre = Console.ReadLine();
@@ -32,10 +31,8 @@ namespace ListaAbril
                 Boolean solvente = Boolean.Parse(Console.ReadLine());
 
                 Estudiantes estudiante = new Estudiantes(nombre, edad, carnet, solvente);
-                
 
-                while (cont2<2)
-                {
+                for(int x=0; x<2; x++){
                     Console.WriteLine("Ingrese curso");
                     String nombrecurso = Console.ReadLine();
 
@@ -49,39 +46,39 @@ namespace ListaAbril
                     int final = Convert.ToInt16(Console.ReadLine());
 
                     Cursos cursos1 = new Cursos(nombrecurso, nota1, nota2, final);
-                    ListaCursos[cont2] = cursos1;
-                    cont2++;
                     
+                    ListaCursos[x] = cursos1;  
+
                 }
 
+                    
+                    
+                
+
                 ListaEstudiantes[cont] = estudiante;
-                cont++;
+                cont++; 
 
             }
-
-            
-            
-            
+            Console.WriteLine("");
             Console.WriteLine("LISTA");
 
             for(int i=0; i<2; i++)
             {
                 Estudiantes estudiante = ListaEstudiantes[i];
-                Console.WriteLine(" nombre de estudiante " + estudiante.nombre + " Carnet " + estudiante.carnet);
+                Console.WriteLine("NOMBRE: " + estudiante.nombre + " CARNET: " + estudiante.carnet + "EDAD: " +estudiante.edad);
+                Console.WriteLine("¿Solvente?: " +estudiante.solvente);
 
                 for(int j=0; j<2; j++)
                 {
                     Cursos cursos1 = ListaCursos[j];
-                    Console.WriteLine("Nombre del curso" + cursos1.nombrecurso);
+                    Console.WriteLine("CURSO: " + cursos1.nombrecurso);
+                    Console.WriteLine("NOTA DE PARCIAL 1: " +cursos1.nota1+ "NOTA DE PARCIAL 2: "+cursos1.nota2);
+                    Console.WriteLine("NOTA DE EXAMEN FINAL: "+cursos1.final);
+                    Console.WriteLine("");
+                    Console.WriteLine("");
                 }
                 
-            }
-
-            
-
-            Console.ReadKey();
-            
-                
+            }     
 
 
         }
