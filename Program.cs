@@ -65,14 +65,14 @@ namespace ListaAbril
             for(int i=0; i<2; i++)
             {
                 Estudiantes estudiante = ListaEstudiantes[i];
-                Console.WriteLine("NOMBRE: " + estudiante.nombre + " CARNET: " + estudiante.carnet + "EDAD: " +estudiante.edad);
+                Console.WriteLine("NOMBRE: " + estudiante.nombre + "  CARNET: " + estudiante.carnet + "  EDAD: " +estudiante.edad);
                 Console.WriteLine("¿Solvente?: " +estudiante.solvente);
 
                 for(int j=0; j<2; j++)
                 {
                     Cursos cursos1 = ListaCursos[j];
                     Console.WriteLine("CURSO: " + cursos1.nombrecurso);
-                    Console.WriteLine("NOTA DE PARCIAL 1: " +cursos1.nota1+ "NOTA DE PARCIAL 2: "+cursos1.nota2);
+                    Console.WriteLine("  NOTA DE PARCIAL 1: " +cursos1.nota1+ "  NOTA DE PARCIAL 2: "+cursos1.nota2);
                     Console.WriteLine("NOTA DE EXAMEN FINAL: "+cursos1.final);
                     Console.WriteLine("");
                     Console.WriteLine("");
