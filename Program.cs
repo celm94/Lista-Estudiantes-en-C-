@@ -51,9 +51,6 @@ namespace ListaAbril
 
                 }
 
-                    
-                    
-                
 
                 ListaEstudiantes[cont] = estudiante;
                 cont++; 
@@ -76,12 +73,8 @@ namespace ListaAbril
                     Console.WriteLine("NOTA DE EXAMEN FINAL: "+cursos1.final);
                     Console.WriteLine("");
                     Console.WriteLine("");
-                }
-                
+                } 
             }     
-
-
         }
-
     }
 }

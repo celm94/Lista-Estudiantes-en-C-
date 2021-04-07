@@ -16,8 +16,7 @@ namespace ListaAbril
             this.carnet= carnet;
             this.solvente= solvente;
              
-        }
-        
+        }  
         
     }
 }

@@ -17,9 +17,5 @@ namespace ListaAbril
             this.final= final;
 
         }
-
-
     }
-
-
 }
