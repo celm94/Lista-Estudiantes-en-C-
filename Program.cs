@@ -38,7 +38,7 @@ namespace ListaAbril
             for(int i=0; i<2; i++)
             {
                 Estudiantes estudiante = ListaEstudiantes[i];
-                Console.WriteLine("nombre de estudiante " + estudiante.nombre+ "Carnet "+estudiante.carnet);
+                Console.WriteLine(" nombre de estudiante " + estudiante.nombre + " Carnet " + estudiante.carnet);
                 
             }
 
