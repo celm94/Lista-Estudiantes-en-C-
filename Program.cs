@@ -18,7 +18,7 @@ namespace ListaAbril
 
             while(cont<2)
             {
-                Console.WriteLine("INGRESE NOMBRE DE ESTUDIANTE ");
+                Console.WriteLine("INGRESE NOMBRE DE ESTUDIANTE "+cont);
                 String nombre = Console.ReadLine();
                 Console.WriteLine("");
 
@@ -37,7 +37,7 @@ namespace ListaAbril
                 Estudiantes estudiante = new Estudiantes(nombre, edad, carnet, solvente);
 
                 for(int x=0; x<2; x++){
-                    Console.WriteLine("INGRESE NOMBRE DE CURSO ");
+                    Console.WriteLine("INGRESE NOMBRE DE CURSO "+ x);
                     String nombrecurso = Console.ReadLine();
                     Console.WriteLine("");
 
@@ -71,7 +71,7 @@ namespace ListaAbril
             for(int i=0; i<2; i++)
             {
                 Estudiantes estudiante = ListaEstudiantes[i];
-                Console.WriteLine("Estudiante ");
+                Console.WriteLine("Estudiante "+i);
                 Console.WriteLine("NOMBRE: " + estudiante.nombre +  "  EDAD: " +estudiante.edad);
                 Console.WriteLine("CARNET: " + estudiante.carnet);
                 Console.WriteLine("¿Solvente?: " +estudiante.solvente);
@@ -81,7 +81,7 @@ namespace ListaAbril
                 {
                     
                     Cursos cursos1 = ListaCursos[j];
-                    Console.WriteLine("NOMBRE DE CURSO: "  + cursos1.nombrecurso);
+                    Console.WriteLine("NOMBRE DE CURSO "+j+": "  + cursos1.nombrecurso);
                     Console.WriteLine("  NOTA DE PARCIAL 1: " +cursos1.nota1+ "   NOTA DE PARCIAL 2: "+cursos1.nota2);
                     Console.WriteLine("NOTA DE EXAMEN FINAL:  "+cursos1.final);
                     Console.WriteLine("");
