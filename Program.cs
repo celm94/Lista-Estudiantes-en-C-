@@ -72,7 +72,7 @@ namespace ListaAbril
             {
                 Estudiantes estudiante = ListaEstudiantes[i];
                 Console.WriteLine("Estudiante "+i);
-                Console.WriteLine("NOMBRE: " + estudiante.nombre +  "  EDAD: " +estudiante.edad);
+                Console.WriteLine("NOMBRE: " + estudiante.nombre +  "  EDAD: "+estudiante.edad);
                 Console.WriteLine("CARNET: " + estudiante.carnet);
                 Console.WriteLine("¿Solvente?: " +estudiante.solvente);
                 Console.WriteLine("");
